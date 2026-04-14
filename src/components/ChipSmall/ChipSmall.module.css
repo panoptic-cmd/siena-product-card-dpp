@@ -1,0 +1,31 @@
+.chipWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Espaçamento e Formato */
+  padding: 4px 12px;
+  border-radius: 20px; /* Efeito pílula */
+  
+  /* Cores Azul Claro (Clean) */
+  background-color: #e0f2fe; /* Azul celeste muito suave */
+  border: 1px solid #bae6fd; /* Borda um tom acima do fundo */
+  color: #0369a1;           /* Azul escuro para leitura clara */
+  
+  /* Tipografia */
+  font-size: 0.7rem;        /* Pequeno e elegante */
+  font-weight: 700;         /* Negrito para destacar a informação */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  /* Comportamento */
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito Hover Sutil */
+.chipWrapper:hover {
+  background-color: #bae6fd;
+  border-color: #7dd3fc;
+  transform: translateY(-1px); /* Pequena elevação */
+}

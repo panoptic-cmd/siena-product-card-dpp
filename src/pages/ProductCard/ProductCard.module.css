@@ -1,0 +1,111 @@
+/* Centralização Total na Página */
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff; /* Cor escura de fundo para destacar o card */
+  padding: 40px 20px;
+}
+
+/* Estilo do Cabeçalho */
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.sienaLogo {
+  height: 80px; /* Ajusta conforme o teu logo */
+  margin-bottom: 8px;
+}
+
+.productTitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Estilo do Card (Branco) */
+.cardWrapper {
+  width: 100%;
+  max-width: 380px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ... Mantém o resto do teu CSS anterior (productPicture, contentSection, etc) ... */
+
+
+.cardWrapper {
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: sans-serif;
+  color: #333;
+}
+
+.productPicture img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.contentSection {
+  padding: 20px;
+}
+
+.contentSection h2, 
+.contentSection h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 4px;
+}
+
+.contentSection h3 {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  border: none;
+  color: #666;
+}
+
+.infoRow {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.chipGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.characteristicsSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.characteristicsSection li {
+  font-size: 0.85rem;
+  color: #555;
+  padding: 4px 0;
+  border-bottom: 1px dashed #eee;
+}
