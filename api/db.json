@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "item_type": "Jersey",
+      "item_name": "Circle Running Jersey",
+      "backdrop_path": "https://circlesportswear.com/cdn/shop/files/T-shirt_manches_longues_Feel_Good_Onyx_Black_women_3.jpg?v=1772027694&width=2200",
+      "material": "100% Cotton",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "product_id": "JerseyLongSleeveDark",
+      "country_of_production": "Portugal",
+      "year": "2026"
+    },
+
+    {
+      "id": "2",
+      "item_type": "Jersey",
+      "item_name": "Circle Feel Good Pop",
+      "backdrop_path": "https://circlesportswear.com/cdn/shop/files/tshirt_manches_longues_feel_good_pop_onyx_black_women_4.jpg?v=1754661851",
+      "material": "74% RECYCLED POLYAMIDE (Q-Cycle Trademark), 26% ELASTHANE",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "product_id": "ShortsTrainingLight",
+      "country_of_production": "Portugal",
+      "year": "2026"
+    },
+    {
+      "id": "3",
+      "item_type": "T-shirt",
+      "item_name": "T-Shirt Fries",
+      "backdrop_path": "https://karokauer.com/cdn/shop/files/karo-kauer-oversize-shirt-french-fries-white-4_360x.jpg?v=1774881559",
+      "material": "100% cotton",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "product_id": "OversizedFriesTshirt",
+      "country_of_production": "Portugal",
+      "year": "2026"
+    }
+  ]
+}

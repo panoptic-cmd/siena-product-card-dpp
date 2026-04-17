@@ -10,6 +10,8 @@ import type { ITypeJersey } from "../../types/TypeJersey";
 import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { supabase } from "../../supabaseClient"; 
+
 
 // interface Props {
 //   product: ITypeJersey
@@ -19,13 +21,35 @@ function ProductCard() {
   const { id } = useParams();
   const [product, setProduct] = useState<ITypeJersey | null>(null);
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/items/${id}`)
-      .then((res) => res.json())
-      .then((data) => setProduct(data));
+  // useEffect(() => {
+  //   fetch(`http://localhost:3000/items/${id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setProduct(data));
+  // }, [id]);
+
+  // if (!product) return <div>Loading...</div>;
+
+
+useEffect(() => {
+    async function getSingleProduct() {
+      const { data, error } = await supabase
+        .from('JerseyAPI') // 2. Nome da tua tabela
+        .select('*')
+        .eq('id', id)      // 3. Filtra onde o ID é igual ao da URL
+        .single();         // 4. Diz ao Supabase para trazer apenas 1 objeto
+
+      if (error) {
+        console.error("Erro ao buscar produto:", error.message);
+      } else {
+        setProduct(data as ITypeJersey);
+      }
+    }
+
+    if (id) getSingleProduct();
   }, [id]);
 
   if (!product) return <div>Loading...</div>;
+
 
   return (
     <div className={style.pageContainer}>
