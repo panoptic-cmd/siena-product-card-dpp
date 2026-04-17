@@ -1,0 +1,10 @@
+.mainContainer {
+    width: 100%;
+  display: flex;
+  flex-direction: row; /* Alinha os cards lado a lado */
+  flex-wrap: wrap;     /* Permite que passem para a linha de baixo se não couberem */
+  gap: 20px;           /* Espaço entre os cards */
+  background-color: white; /* Remove o fundo escuro */
+  min-height: 100vh;
+  padding: 40px;
+}

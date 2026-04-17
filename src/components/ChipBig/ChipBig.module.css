@@ -1,0 +1,44 @@
+
+.chipWrapper{
+   
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+ padding: 12px 16px; 
+  margin-bottom: 8px; /* Espaço entre os cartões */
+
+  border-radius: 20px; 
+  
+  background-color: #bce0f6; 
+  border: 1px solid #bae6fd; 
+  color: #02517c; 
+
+
+}
+
+.headerGroup {
+  display: flex;
+  align-items: center; 
+  gap: 6px; /* Espaço entre ícone e título */
+  margin-bottom: 4px; /* Espaço entre o cabeçalho e a label de baixo */
+            
+}
+
+.description {
+  margin: 0;
+  font-size: 0.85rem; /* Título mais pequeno (Product ID) */
+  font-weight: 500;
+}
+
+.label {
+  font-size: 1rem;    /* Valor maior e com mais peso (Portugal, 2025...) */
+  font-weight: 600;
+  text-align: center;
+}
+
+.icon{
+   size: 1.1rem;
+}

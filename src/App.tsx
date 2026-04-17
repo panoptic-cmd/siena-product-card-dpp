@@ -1,8 +1,8 @@
 import "./App.css";
-import ProductCard from "./pages/ProductCard/ProductCard";
+import AllProductsDisplay from "./pages/AllProductDisplay/AllProductsDisplay";
 
 function App() {
-  return <ProductCard />;
+  return <AllProductsDisplay />;
 }
 
 export default App;
