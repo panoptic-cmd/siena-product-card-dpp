@@ -14,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<AllProductsDisplay />} />
         <Route path="/details/:id" element={<ProductCard />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
     <Analytics />
   </StrictMode>,
